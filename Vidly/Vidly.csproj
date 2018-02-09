@@ -237,11 +237,28 @@
     <Compile Include="Migrations\201802081731374_AddBirthdatePropertyToCustomers.Designer.cs">
       <DependentUpon>201802081731374_AddBirthdatePropertyToCustomers.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201802091814238_AddMovies.cs" />
+    <Compile Include="Migrations\201802091814238_AddMovies.Designer.cs">
+      <DependentUpon>201802091814238_AddMovies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802091852067_AddMovieReleaseDate.cs" />
+    <Compile Include="Migrations\201802091852067_AddMovieReleaseDate.Designer.cs">
+      <DependentUpon>201802091852067_AddMovieReleaseDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802091908289_AddGenresAsASeparateTable.cs" />
+    <Compile Include="Migrations\201802091908289_AddGenresAsASeparateTable.Designer.cs">
+      <DependentUpon>201802091908289_AddGenresAsASeparateTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802091916554_UpdatingGenresForMovieUsingDbTable.cs" />
+    <Compile Include="Migrations\201802091916554_UpdatingGenresForMovieUsingDbTable.Designer.cs">
+      <DependentUpon>201802091916554_UpdatingGenresForMovieUsingDbTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -315,6 +332,7 @@
     <Content Include="Views\Shared\_NavBar.cshtml" />
     <Content Include="Views\Customers\Details.cshtml" />
     <Content Include="Views\Movies\Index.cshtml" />
+    <Content Include="Views\Movies\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -362,6 +380,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201802081731374_AddBirthdatePropertyToCustomers.resx">
       <DependentUpon>201802081731374_AddBirthdatePropertyToCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802091814238_AddMovies.resx">
+      <DependentUpon>201802091814238_AddMovies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802091852067_AddMovieReleaseDate.resx">
+      <DependentUpon>201802091852067_AddMovieReleaseDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802091908289_AddGenresAsASeparateTable.resx">
+      <DependentUpon>201802091908289_AddGenresAsASeparateTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802091916554_UpdatingGenresForMovieUsingDbTable.resx">
+      <DependentUpon>201802091916554_UpdatingGenresForMovieUsingDbTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
