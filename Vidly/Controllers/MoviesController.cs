@@ -10,6 +10,7 @@ using Vidly.ViewModels;
 
 namespace Vidly.Controllers
 {
+    [Authorize(Roles = RoleName.CanManageMovies)]
     public class MoviesController : Controller
     {
         private ApplicationDbContext _context;
@@ -24,6 +25,7 @@ namespace Vidly.Controllers
             _context.Dispose();
         }
 
+        [Authorize]
         public ViewResult Index()
         {
             if (User.IsInRole(RoleName.CanManageMovies))
@@ -61,7 +63,6 @@ namespace Vidly.Controllers
             return View(identifiedMovie);
         }
 
-        [Authorize(Roles = RoleName.CanManageMovies)]
         public ActionResult New()
         {
             var genres = _context.Genres.ToList();
