@@ -24,6 +24,9 @@ namespace Vidly.Models
         [Range(1, 20)]
         public int NumberInStock { get; set; }
 
+        [Range(0, 20)]
+        public int NumberAvailable { get; set; }
+
         public DateTime AddedToDatabaseDate { get; set; }
 
         [Display(Name = "Release Date")]
